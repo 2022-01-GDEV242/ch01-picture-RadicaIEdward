@@ -12,14 +12,14 @@
 public class Picture
 {
     private Circle head;
-    private Triangle ear1;
-    private Triangle ear2;
-    private Triangle ear3;
-    private Triangle ear4;
-    private Circle eye1;
-    private Circle eye2;
-    private Square pupil1;
-    private Square pupil2;
+    private Triangle rightear;
+    private Triangle leftear;
+    private Triangle rightear2;
+    private Triangle leaftear2;
+    private Circle righteye;
+    private Circle lefteye;
+    private Triangle rightpupil;
+    private Triangle leftpupil;
     private Person mouth;
     private Triangle nose;
     private boolean drawn;
@@ -30,14 +30,14 @@ public class Picture
     public Picture()
     {
         head = new Circle();
-        ear1 = new Triangle();
-        ear2 = new Triangle();
-        ear3 = new Triangle();
-        ear4 = new Triangle();
-        eye1 = new Circle();
-        eye2 = new Circle();
-        pupil1 = new Square();
-        pupil2 = new Square();
+        rightear = new Triangle();
+        leftear = new Triangle();
+        rightear2 = new Triangle();
+        leaftear2 = new Triangle();
+        righteye = new Circle();
+        lefteye = new Circle();
+        rightpupil = new Triangle();
+        leftpupil = new Triangle();
         mouth = new Person();
         nose = new Triangle();
         drawn = false;
@@ -50,58 +50,58 @@ public class Picture
     {
         if(!drawn) {
             head.changeColor("black");
-            head.moveHorizontal(0);
-            head.moveVertical(0);
-            head.changeSize(400);
+            head.moveHorizontal(20);
+            head.moveVertical(150);
+            head.changeSize(500);
             head.makeVisible();
             
-            ear1.changeColor("black");
-            ear1.moveHorizontal(0);
-            ear1.moveVertical(0);
-            ear1.changeSize(0,0);
-            ear1.makeVisible();
+            rightear.changeColor("black");
+            rightear.moveHorizontal(180);
+            rightear.moveVertical(0);
+            rightear.changeSize(200,200);
+            rightear.makeVisible();
+        
+            leftear.changeColor("black");
+            leftear.moveHorizontal(400);
+            leftear.moveVertical(0);
+            leftear.changeSize(200,200);
+            leftear.makeVisible();
     
-            ear2.changeColor("black");
-            ear2.moveHorizontal(0);
-            ear2.moveVertical(0);
-            ear2.changeSize(0,0);
-            ear2.makeVisible();
-    
-            ear3.changeColor("pink");
-            ear3.moveHorizontal(0);
-            ear3.moveVertical(0);
-            ear3.changeSize(0,0);
-            ear3.makeVisible();
+            rightear2.changeColor("pink");
+            rightear2.moveHorizontal(180);
+            rightear2.moveVertical(45);
+            rightear2.changeSize(100,75);
+            rightear2.makeVisible();
             
-            ear4.changeColor("pink");
-            ear4.moveHorizontal(0);
-            ear4.moveVertical(0);
-            ear4.changeSize(0,0);
-            ear4.makeVisible();
+            leaftear2.changeColor("pink");
+            leaftear2.moveHorizontal(400);
+            leaftear2.moveVertical(45);
+            leaftear2.changeSize(100,75);
+            leaftear2.makeVisible();
             
-            eye1.changeColor("yellow");
-            eye1.moveHorizontal(0);
-            eye1.moveVertical(0);
-            eye1.changeSize(0);
-            eye1.makeVisible();
+            righteye.changeColor("yellow");
+            righteye.moveHorizontal(180);
+            righteye.moveVertical(275);
+            righteye.changeSize(50);
+            righteye.makeVisible();
             
-            eye2.changeColor("yellow");
-            eye2.moveHorizontal(0);
-            eye2.moveVertical(0);
-            eye2.changeSize(0);
-            eye2.makeVisible();
+            lefteye.changeColor("yellow");
+            lefteye.moveHorizontal(400);
+            lefteye.moveVertical(275);
+            lefteye.changeSize(50);
+            lefteye.makeVisible();
             
-            pupil1.changeColor("black");
-            pupil1.moveHorizontal(0);
-            pupil1.moveVertical(0);
-            pupil1.changeSize(0);
-            pupil1.makeVisible();
+            rightpupil.changeColor("black");
+            rightpupil.moveHorizontal(0);
+            rightpupil.moveVertical(0);
+            rightpupil.changeSize(40,10);
+            rightpupil.makeVisible();
             
-            pupil2.changeColor("black");
-            pupil2.moveHorizontal(0);
-            pupil2.moveVertical(0);
-            pupil2.changeSize(0);
-            pupil2.makeVisible();
+            leftpupil.changeColor("black");
+            leftpupil.moveHorizontal(0);
+            leftpupil.moveVertical(0);
+            leftpupil.changeSize(40,10);
+            leftpupil.makeVisible();
             
             mouth.changeColor("pink");
             mouth.moveHorizontal(0);
