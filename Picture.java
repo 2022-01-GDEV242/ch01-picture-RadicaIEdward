@@ -49,27 +49,72 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
+            head.changeColor("black");
+            head.moveHorizontal(0);
+            head.moveVertical(0);
+            head.changeSize(400);
+            head.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
+            ear1.changeColor("black");
+            ear1.moveHorizontal(0);
+            ear1.moveVertical(0);
+            ear1.changeSize(0,0);
+            ear1.makeVisible();
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
+            ear2.changeColor("black");
+            ear2.moveHorizontal(0);
+            ear2.moveVertical(0);
+            ear2.changeSize(0,0);
+            ear2.makeVisible();
     
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            ear3.changeColor("pink");
+            ear3.moveHorizontal(0);
+            ear3.moveVertical(0);
+            ear3.changeSize(0,0);
+            ear3.makeVisible();
+            
+            ear4.changeColor("pink");
+            ear4.moveHorizontal(0);
+            ear4.moveVertical(0);
+            ear4.changeSize(0,0);
+            ear4.makeVisible();
+            
+            eye1.changeColor("yellow");
+            eye1.moveHorizontal(0);
+            eye1.moveVertical(0);
+            eye1.changeSize(0);
+            eye1.makeVisible();
+            
+            eye2.changeColor("yellow");
+            eye2.moveHorizontal(0);
+            eye2.moveVertical(0);
+            eye2.changeSize(0);
+            eye2.makeVisible();
+            
+            pupil1.changeColor("black");
+            pupil1.moveHorizontal(0);
+            pupil1.moveVertical(0);
+            pupil1.changeSize(0);
+            pupil1.makeVisible();
+            
+            pupil2.changeColor("black");
+            pupil2.moveHorizontal(0);
+            pupil2.moveVertical(0);
+            pupil2.changeSize(0);
+            pupil2.makeVisible();
+            
+            mouth.changeColor("pink");
+            mouth.moveHorizontal(0);
+            mouth.moveVertical(0);
+            mouth.changeSize(0,0);
+            mouth.makeVisible();
+            
+            nose.changeColor("pink");
+            nose.moveHorizontal(0);
+            nose.moveVertical(0);
+            nose.changeSize(0,0);
+            nose.makeVisible();
+            
             drawn = true;
         }
     }
@@ -79,10 +124,10 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        // wall.changeColor("black");
+        // window.changeColor("white");
+        // roof.changeColor("black");
+        // sun.changeColor("black");
     }
 
     /**
@@ -90,9 +135,9 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        // wall.changeColor("red");
+        // window.changeColor("black");
+        // roof.changeColor("green");
+        // sun.changeColor("yellow");
     }
 }
