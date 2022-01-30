@@ -12,16 +12,21 @@
 public class Picture
 {
     private Circle head;
-    private Triangle rightear;
-    private Triangle leftear;
-    private Triangle rightear2;
-    private Triangle leaftear2;
-    private Circle righteye;
-    private Circle lefteye;
-    private Triangle rightpupil;
-    private Triangle leftpupil;
+    private Triangle rightEar;
+    private Triangle leftEar;
+    private Triangle rightEar2;
+    private Triangle leftEar2;
+    private Circle rightEye;
+    private Circle leftEye;
+    private Triangle rightPupil;
+    private Triangle leftPupil;
     private Person mouth;
-    private Triangle nose;
+    private Square noseBackground;
+    private Triangle noseEraserRight;
+    private Triangle noseEraserLeft;
+    private Square noseEraserTop;
+    private Square noseEraserRight2;
+    private Square noseEraserLeft2;
     private boolean drawn;
 
     /**
@@ -30,16 +35,21 @@ public class Picture
     public Picture()
     {
         head = new Circle();
-        rightear = new Triangle();
-        leftear = new Triangle();
-        rightear2 = new Triangle();
-        leaftear2 = new Triangle();
-        righteye = new Circle();
-        lefteye = new Circle();
-        rightpupil = new Triangle();
-        leftpupil = new Triangle();
+        rightEar = new Triangle();
+        leftEar = new Triangle();
+        rightEar2 = new Triangle();
+        leftEar2 = new Triangle();
+        rightEye = new Circle();
+        leftEye = new Circle();
+        rightPupil = new Triangle();
+        leftPupil = new Triangle();
         mouth = new Person();
-        nose = new Triangle();
+        noseBackground = new Square();
+        noseEraserRight = new Triangle();
+        noseEraserLeft = new Triangle();
+        noseEraserTop = new Square();
+        noseEraserRight2 = new Square();
+        noseEraserLeft2 = new Square();
         drawn = false;
     }
 
@@ -55,65 +65,95 @@ public class Picture
             head.changeSize(500);
             head.makeVisible();
             
-            rightear.changeColor("black");
-            rightear.moveHorizontal(180);
-            rightear.moveVertical(0);
-            rightear.changeSize(200,200);
-            rightear.makeVisible();
+            rightEar.changeColor("black");
+            rightEar.moveHorizontal(180);
+            rightEar.moveVertical(0);
+            rightEar.changeSize(200,200);
+            rightEar.makeVisible();
         
-            leftear.changeColor("black");
-            leftear.moveHorizontal(400);
-            leftear.moveVertical(0);
-            leftear.changeSize(200,200);
-            leftear.makeVisible();
+            leftEar.changeColor("black");
+            leftEar.moveHorizontal(400);
+            leftEar.moveVertical(0);
+            leftEar.changeSize(200,200);
+            leftEar.makeVisible();
     
-            rightear2.changeColor("pink");
-            rightear2.moveHorizontal(180);
-            rightear2.moveVertical(45);
-            rightear2.changeSize(100,75);
-            rightear2.makeVisible();
+            rightEar2.changeColor("pink");
+            rightEar2.moveHorizontal(180);
+            rightEar2.moveVertical(45);
+            rightEar2.changeSize(100,75);
+            rightEar2.makeVisible();
             
-            leaftear2.changeColor("pink");
-            leaftear2.moveHorizontal(400);
-            leaftear2.moveVertical(45);
-            leaftear2.changeSize(100,75);
-            leaftear2.makeVisible();
+            leftEar2.changeColor("pink");
+            leftEar2.moveHorizontal(400);
+            leftEar2.moveVertical(45);
+            leftEar2.changeSize(100,75);
+            leftEar2.makeVisible();
             
-            righteye.changeColor("yellow");
-            righteye.moveHorizontal(180);
-            righteye.moveVertical(275);
-            righteye.changeSize(50);
-            righteye.makeVisible();
+            rightEye.changeColor("yellow");
+            rightEye.moveHorizontal(180);
+            rightEye.moveVertical(275);
+            rightEye.changeSize(50);
+            rightEye.makeVisible();
             
-            lefteye.changeColor("yellow");
-            lefteye.moveHorizontal(400);
-            lefteye.moveVertical(275);
-            lefteye.changeSize(50);
-            lefteye.makeVisible();
+            leftEye.changeColor("yellow");
+            leftEye.moveHorizontal(400);
+            leftEye.moveVertical(275);
+            leftEye.changeSize(50);
+            leftEye.makeVisible();
             
-            rightpupil.changeColor("black");
-            rightpupil.moveHorizontal(0);
-            rightpupil.moveVertical(0);
-            rightpupil.changeSize(40,10);
-            rightpupil.makeVisible();
-            
-            leftpupil.changeColor("black");
-            leftpupil.moveHorizontal(0);
-            leftpupil.moveVertical(0);
-            leftpupil.changeSize(40,10);
-            leftpupil.makeVisible();
+            rightPupil.changeColor("black");
+            rightPupil.moveHorizontal(230);
+            rightPupil.moveVertical(195);
+            rightPupil.changeSize(50,10);
+            rightPupil.makeVisible();
+     
+            leftPupil.changeColor("black");
+            leftPupil.moveHorizontal(450);
+            leftPupil.moveVertical(195);
+            leftPupil.changeSize(50,10);
+            leftPupil.makeVisible();
             
             mouth.changeColor("pink");
-            mouth.moveHorizontal(0);
-            mouth.moveVertical(0);
-            mouth.changeSize(0,0);
+            mouth.moveHorizontal(300);
+            mouth.moveVertical(320);
+            mouth.changeSize(50,50);
             mouth.makeVisible();
             
-            nose.changeColor("pink");
-            nose.moveHorizontal(0);
-            nose.moveVertical(0);
-            nose.changeSize(0,0);
-            nose.makeVisible();
+            noseBackground.changeColor("pink");
+            noseBackground.moveHorizontal(234);
+            noseBackground.moveVertical(332);
+            noseBackground.changeSize(75);
+            noseBackground.makeVisible();
+            
+            noseEraserRight.changeColor("black");
+            noseEraserRight.moveHorizontal(349);
+            noseEraserRight.moveVertical(347);
+            noseEraserRight.changeSize(40,40);
+            noseEraserRight.makeVisible();
+            
+            noseEraserLeft.changeColor("black");
+            noseEraserLeft.moveHorizontal(391);
+            noseEraserLeft.moveVertical(347);
+            noseEraserLeft.changeSize(40,40);
+            noseEraserLeft.makeVisible();
+            
+            noseEraserTop.changeColor("black");
+            noseEraserTop.moveHorizontal(234);
+            noseEraserTop.moveVertical(300);
+            noseEraserTop.changeSize(75);
+            noseEraserTop.makeVisible();
+            
+            noseEraserRight2.changeColor("black");
+            noseEraserRight2.moveHorizontal(175);
+            noseEraserRight2.moveVertical(332);
+            noseEraserRight2.changeSize(75);
+            noseEraserRight2.makeVisible();
+            
+            noseEraserLeft2.changeColor("black");
+            noseEraserLeft2.moveHorizontal(292);
+            noseEraserLeft2.moveVertical(332);
+            noseEraserLeft2.changeSize(75);
+            noseEraserLeft2.makeVisible();
             
             drawn = true;
         }
