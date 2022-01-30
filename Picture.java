@@ -11,10 +11,17 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
+    private Circle head;
+    private Triangle ear1;
+    private Triangle ear2;
+    private Triangle ear3;
+    private Triangle ear4;
+    private Circle eye1;
+    private Circle eye2;
+    private Square pupil1;
+    private Square pupil2;
+    private Person mouth;
+    private Triangle nose;
     private boolean drawn;
 
     /**
@@ -22,10 +29,17 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
+        head = new Circle();
+        ear1 = new Triangle();
+        ear2 = new Triangle();
+        ear3 = new Triangle();
+        ear4 = new Triangle();
+        eye1 = new Circle();
+        eye2 = new Circle();
+        pupil1 = new Square();
+        pupil2 = new Square();
+        mouth = new Person();
+        nose = new Triangle();
         drawn = false;
     }
 
