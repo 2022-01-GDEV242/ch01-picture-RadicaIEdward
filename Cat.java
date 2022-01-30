@@ -1,16 +1,17 @@
 /**
- * This class represents a simple picture. You can draw the picture using
- * the draw method. But wait, there's more: being an electronic picture, it
+ * This class represents a simple Cat. You can draw the Cat using
+ * the draw method. But wait, there's more: being an electronic Cat, it
  * can be changed. You can set it to black-and-white display and back to
  * colors (only after it's been drawn, of course).
  *
- * This class was written as an early example for teaching Java with BlueJ.
+ * This class was written because Cats.
  * 
- * @author  Michael Kšlling and David J. Barnes
- * @version 2016.02.29
+ * @author  Edward Galindez
+ * @version 01.29.2022
  */
-public class Picture
+public class Cat
 {
+    private Square bwBackground;
     private Circle head;
     private Triangle rightEar;
     private Triangle leftEar;
@@ -30,10 +31,11 @@ public class Picture
     private boolean drawn;
 
     /**
-     * Constructor for objects of class Picture
+     * Constructor for objects of class Cat
      */
-    public Picture()
+    public Cat()
     {
+        bwBackground = new Square();
         head = new Circle();
         rightEar = new Triangle();
         leftEar = new Triangle();
@@ -54,11 +56,16 @@ public class Picture
     }
 
     /**
-     * Draw this picture.
+     * Draw this Cat.
      */
     public void draw()
     {
         if(!drawn) {
+            bwBackground.changeColor("black");
+            bwBackground.changeSize(1000);
+            bwBackground.moveHorizontal(-310);
+            bwBackground.moveVertical(-120);
+            
             head.changeColor("black");
             head.moveHorizontal(20);
             head.moveVertical(150);
@@ -106,7 +113,7 @@ public class Picture
             rightPupil.moveVertical(195);
             rightPupil.changeSize(50,10);
             rightPupil.makeVisible();
-     
+            
             leftPupil.changeColor("black");
             leftPupil.moveHorizontal(450);
             leftPupil.moveVertical(195);
@@ -136,6 +143,7 @@ public class Picture
             noseEraserLeft.moveVertical(347);
             noseEraserLeft.changeSize(40,40);
             noseEraserLeft.makeVisible();
+            rightEar2.changeColor("pink");
             
             noseEraserTop.changeColor("black");
             noseEraserTop.moveHorizontal(234);
@@ -160,24 +168,50 @@ public class Picture
     }
 
     /**
-     * Change this picture to black/white display
+     * Change this Cat to black/white display
      */
     public void setBlackAndWhite()
     {
-        // wall.changeColor("black");
-        // window.changeColor("white");
-        // roof.changeColor("black");
-        // sun.changeColor("black");
+        bwBackground.makeVisible();
+        head.changeColor("white");
+        rightEar.changeColor("white");
+        leftEar.changeColor("white");
+        rightEar2.changeColor("black");
+        leftEar2.changeColor("black");
+        rightEye.changeColor("black");
+        leftEye.changeColor("black");
+        rightPupil.changeColor("white");
+        leftPupil.changeColor("white");
+        mouth.changeColor("black");
+        noseBackground.changeColor("black");
+        noseEraserRight.changeColor("white");
+        noseEraserLeft.changeColor("white");
+        noseEraserTop.changeColor("white");
+        noseEraserRight2.changeColor("white");
+        noseEraserLeft2.changeColor("white");
     }
 
     /**
-     * Change this picture to use color display
+     * Change this Cat to use color display
      */
     public void setColor()
     {
-        // wall.changeColor("red");
-        // window.changeColor("black");
-        // roof.changeColor("green");
-        // sun.changeColor("yellow");
+        bwBackground.makeInvisible();
+        head.changeColor("black");
+        rightEar.changeColor("black");
+        leftEar.changeColor("black");
+        rightEar2.changeColor("pink");
+        leftEar2.changeColor("pink");
+        rightEye.changeColor("yellow");
+        leftEye.changeColor("yellow");
+        rightPupil.changeColor("black");
+        leftPupil.changeColor("black");
+        mouth.changeColor("pink");
+        noseBackground.changeColor("pink");
+        noseEraserRight.changeColor("black");
+        noseEraserLeft.changeColor("black");
+        noseEraserTop.changeColor("black");
+        noseEraserRight2.changeColor("black");
+        noseEraserLeft2.changeColor("black");
     }
 }
