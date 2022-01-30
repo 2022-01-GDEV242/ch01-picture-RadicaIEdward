@@ -23,7 +23,7 @@ public class Circle
     {
         diameter = 68;
         xPosition = 230;
-        yPosition = 90;
+        yPosition = 60;
         color = "blue";
     }
 
@@ -157,7 +157,7 @@ public class Circle
 
     /**
      * Change the color. Valid colors are "red", "yellow", "blue", "green",
-     * "magenta" and "black".
+     * "magenta", "pink" and "black".
      */
     public void changeColor(String newColor)
     {

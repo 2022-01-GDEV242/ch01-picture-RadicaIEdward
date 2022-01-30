@@ -8,10 +8,9 @@ import java.util.*;
  * This is a modification of the general purpose Canvas, specially made for
  * the BlueJ "shapes" example. 
  *
- * @author: Bruce Quig
- * @author: Michael Kšlling (mik)
+ * @author: Edward Galindez
  *
- * @version 2016.02.29
+ * @version 01.29.2022
  */
 public class Canvas
 {
@@ -28,7 +27,7 @@ public class Canvas
     public static Canvas getCanvas()
     {
         if(canvasSingleton == null) {
-            canvasSingleton = new Canvas("BlueJ Picture Demo", 500, 300, 
+            canvasSingleton = new Canvas("BlueJ Picture Demo", 1000, 1000, 
                                          Color.white);
         }
         canvasSingleton.setVisible(true);
@@ -142,6 +141,9 @@ public class Canvas
         }
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
+        }
+        else if(colorString.equals("pink")) {
+            graphic.setColor(Color.pink);
         }
         else {
             graphic.setColor(Color.black);
